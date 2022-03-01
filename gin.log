@@ -1,0 +1,23 @@
+[GIN-debug] [WARNING] Creating an Engine instance with the Logger and Recovery middleware already attached.
+
+[GIN-debug] [WARNING] Running in "debug" mode. Switch to "release" mode in production.
+ - using env:	export GIN_MODE=release
+ - using code:	gin.SetMode(gin.ReleaseMode)
+
+[GIN-debug] GET    /data/*filepath           --> github.com/gin-gonic/gin.(*RouterGroup).createStaticHandler.func1 (4 handlers)
+[GIN-debug] HEAD   /data/*filepath           --> github.com/gin-gonic/gin.(*RouterGroup).createStaticHandler.func1 (4 handlers)
+[GIN-debug] GET    /swagger/*any             --> github.com/swaggo/gin-swagger.CustomWrapHandler.func1 (4 handlers)
+[GIN-debug] POST   /api/login                --> github.com/vikas/controllers.(*profileHandler).Login-fm (5 handlers)
+[GIN-debug] POST   /api/forgotPass           --> github.com/vikas/controllers.(*profileHandler).ForgotPass-fm (5 handlers)
+[GIN-debug] POST   /api/register             --> github.com/vikas/controllers.RegisterAdmin (5 handlers)
+[GIN-debug] POST   /api/admin/userlogin      --> github.com/vikas/controllers.(*profileHandler).UserLogin-fm (5 handlers)
+[GIN-debug] POST   /api/admin/resetPass      --> github.com/vikas/controllers.(*profileHandler).ResetPass-fm (5 handlers)
+[GIN-debug] POST   /api/admin/logout         --> github.com/vikas/controllers.(*profileHandler).Logout-fm (6 handlers)
+[GIN-debug] GET    /api/admin/allUser        --> github.com/vikas/controllers.GetAllUsers (6 handlers)
+[GIN-debug] POST   /api/admin/createUser     --> github.com/vikas/controllers.CreateUser (4 handlers)
+[GIN-debug] GET    /api/admin/get/:id        --> github.com/vikas/controllers.GetUser (6 handlers)
+[GIN-debug] PUT    /api/admin/update/:id     --> github.com/vikas/controllers.UpdateUser (6 handlers)
+[GIN-debug] DELETE /api/admin/delete/:id     --> github.com/vikas/controllers.(*profileHandler).DeleteUser-fm (6 handlers)
+[GIN-debug] [WARNING] You trusted all proxies, this is NOT safe. We recommend you to set a value.
+Please check https://pkg.go.dev/github.com/gin-gonic/gin#readme-don-t-trust-all-proxies for details.
+[GIN-debug] Listening and serving HTTP on :10000

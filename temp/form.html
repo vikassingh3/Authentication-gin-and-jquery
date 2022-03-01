@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/
+	4.0.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/
+	jquery/3.3.1/jquery.min.js">
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/
+	popper.js/1.12.9/umd/popper.min.js">
+  </script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/
+	4.0.0/js/bootstrap.min.js">
+  </script>
+</head>
+
+<body><br>
+  <p class="text-center">
+    FORM VALIDATION USING JQUERY
+  </p>
+
+
+  <div class="container">
+    <div class="col-lg-8
+		m-auto d-block">
+      <form action="" id="myForm">
+        <div class="form-group">
+          <label for="name">
+            Name:
+          </label>
+          <input type="text" name="name" id="name" class="form-control">
+          <span id="namecheck">
+          </span>
+        </div>
+
+
+        <div class="form-group">
+          <label for="email">
+            Email:
+          </label>
+          <input type="email" name="email" id="emails" class="form-control">
+          <span id="femail">
+          </span>
+        </div>
+        <div>
+          <label for="dob">Date-of-Birth</label>
+          <input type="date" name="Date" id="dob" class="form-control">
+          <span id="fdob" class="text-danger font-weight-regular"></span>
+
+        </div>
+
+        <div class="form-group">
+          <span id="age"></span>
+        </div>
+        <div class="form-group">
+          <label>Gender</label>
+
+          <select id="gender" name="gender" class="form-control">
+            <option value="" selected="selected">Select gender</option>
+            <option value="male">Male</option>
+            <option value="Female">Female</option>
+
+          </select>
+          <span id="gender" class="text-danger"></span>
+        </div>
+        <div class="form-group">
+          <label>Address</label>
+          <input type="text" id="address" name="address" class="form-control" placeholder="address">
+          <span id="address" class="text-danger"></span>
+        </div>
+        <div class="form-group">
+          <label for="country">Country</label>
+          <select id="country" name="country" class="form-control"> <br>
+            <option value="" selected>Select Country</option>
+          </select>
+          <span id="fcountry" class="text-danger font-weight-regular"></span>
+        </div>
+
+
+        <div class="form-group">
+          <label for="state">State</label>
+
+          <select id="state" class="form-control"> <br>
+            <option value="" selected>Select State</option>
+          </select>
+          <span id="fstate" class="text-danger font-weight-regular"></span>
+        </div>
+
+        <div class="form-group">
+          <label for="password">
+            Password:
+          </label>
+          <input type="password" id="pass" maxlength="20" class="form-control">
+          <span id="fpass"></span>
+          <ul>
+            <li>Must be 1 Special Character</li>
+            <li>Must be 1 UpperCase</li>
+            <li>Must be 1 lowerCase</li>
+            <li>Must be 1 Digit</li>
+          </ul>
+        </div>
+
+        <div class="form-group">
+          <label for="conpassword">
+            Confirm Password:
+          </label>
+          <input type="password" id="confirm" class="form-control">
+          <span id="fconfirm"></span>
+        </div>
+      </form>
+      <div>
+
+        <input type="submit" id="submitbtn" value="Submit" class="btn btn-primary">
+        <span id="fsubmit"></span>
+      </div>
+
+
+    </div>
+  </div>
+
+</body>
+<script src="form.js"></script>
+
+</html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Validation Form</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <style>
+        center {
+            margin-top: 100px;
+        }
+
+        table,
+        td {
+
+            border: 2px solid black;
+            padding: 10px;
+            margin: auto;
+            margin-top: 10px;
+        }
+
+        th {
+            border: 2px solid black;
+        }
+    </style>
+
+</head>
+
+<body>
+
+
+    <div id="datails"></div>
+
+    <table id="choose-address-table">
+        <form id="myform">
+        </form>
+        <center>
+            <button type="button" id="btn" onclick="AddUser()">AddUser</button>
+        </center>
+        <button type="button" id="logout">logout</button>
+
+    </table>
+
+
+    <div class="col-md-3"></div>
+    <p id="demo"></p>
+
+
+</body>
+<script src="token.js"></script>
+<script>
+    function AddUser(){
+        window.location.href = "http://127.0.0.1:10000/data/form.html"
+    }
+</script>
+
+</html>
